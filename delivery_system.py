@@ -26,3 +26,24 @@ class Menu:
             "description" : description           
         }
         self.dishes.append(dish)
+
+    def get_menu(self):
+        if not self.dishes:
+            return "Unfortunately, there are no dishes on Menu. Please, add food to the menu 😊"
+        print("        MENU:")
+        for dish in self.dishes:
+            print(f"""
+Name of dish:   {dish["name"]}
+price of dish:  {dish["price"]}
+Available portions:  {dish["portion"]}
+Calory of dish:  {dish["calory"]}
+Type of dish:  {dish["catogory"]}
+Description of dish:  {dish["description"]}
+                  """)
+            
+    def remove_dish(self, name):
+        for dish in self.dishes:
+            if dish["name"] == name:
+                self.dishes.remove(dish)
+                info = f"{dish["name"]} removed from Menu"
+                return info
