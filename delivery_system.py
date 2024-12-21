@@ -82,7 +82,7 @@ class Order:
                 return
         print(f"{dish_name} not find")
         
-    def print_orders(self):
+    def get_orders(self):
         print("     Your orders:")
         for dish in self.selected_dishes:
             print(f"""
@@ -93,3 +93,24 @@ Calory of dish:  {dish.calory}
 Type of dish:  {dish.category}
 Information about dish:  {dish.description}
                   """)
+
+    def get_prices(self):
+        return sum(dish.price for dish in self.selected_dishes)
+       
+            
+class Customer:
+    def __init__(self, name, phone):
+        self.name = name
+        self.phone = phone
+        
+    def __str__(self):
+        return f"Name:  {self.name}, Tephone:   {self.phone}"
+
+
+class DeliveryPerson:
+    def __init__(self, name, vehicle_num):
+        self.name = name
+        self.vehicle_num = vehicle_num
+        
+    def __str__(self):
+        return f"Name:  {self.name}, Vehicle number:   {self.vehicle_num}"
