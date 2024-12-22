@@ -26,7 +26,7 @@ Information about dish:  {self.description}
 class Menu:
     def __init__(self):
         self.dishes = []
-    
+
     def add_dish(self, dish):
         self.dishes.append(dish)
 
@@ -60,7 +60,7 @@ class Order:
         self.selected_dishes = []
         
     def add_to_order(self, dish_name, portion):
-        for dish in self.menu:
+        for dish in self.menu.dishes:
             if dish.name == dish_name:
                 if dish.portion >= portion:
                     dish.portion -= portion
