@@ -114,3 +114,31 @@ class DeliveryPerson:
         
     def __str__(self):
         return f"Name:  {self.name}, Vehicle number:   {self.vehicle_num}"
+    
+# overal_menu = Menu()
+ 
+    
+# food1 = Dish("Plov", 15000, portion=10, calory=600, category="Main Course", description="Traditional Uzbek dish.")
+# food2 = Dish("Shurva", 12000, portion=120, calory=400, category="Soup", description="Uzbek soup with vegetables and meat.")
+# food3 = Dish("Lagman", 18000, portion=19, calory=700, category="Main Course", description="Central Asian noodle dish.")
+# food4 = Dish("Manti", 14000, portion=10, calory=350, category="Main Course", description="Steamed dumplings with meat.")
+# food5 = Dish("Somsa", 8000, portion=240, calory=300, category="Snack", description="Uzbek pastry with meat or pumpkin filling.")
+# food6 = Dish("Kebab", 20000, portion=90, calory=500, category="Main Course", description="Grilled meat skewer.")
+# food7 = Dish("Chuchvara", 10000, portion=69, calory=400, category="Soup", description="Uzbek dumpling soup.")
+# food8 = Dish("Norin", 13000, portion=35, calory=600, category="Main Course", description="Cold noodles with horse meat.")
+# food9 = Dish("Shashlik", 16000, portion=68, calory=550, category="Main Course", description="Grilled meat served with onions.")
+# food10 = Dish("Honim", 12000, portion=65, calory=300, category="Main Course", description="Steamed rolled dough with vegetables.")
+
+
+# dishes = [food1, food2, food3, food4, food5, food6, food7, food8, food9, food10]
+
+# for dish in dishes:
+#     overal_menu.add_dish(dish)
+    
+# overal_menu.get_menu()
+
+# oreder1 = Order(overal_menu)
+# oreder1.add_to_order("Norin", 30)
+# oreder1.add_to_order("Shashlik", 68)
+
+# overal_menu.get_menu()
